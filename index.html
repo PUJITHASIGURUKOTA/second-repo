@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Doctor – Lifecycle Flowchart</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      background-color: #e0f7fa;
+      border: 2px solid #0078D7;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 10px 0;
+      width: 300px;
+      text-align: center;
+      position: relative;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #0078D7;
+      margin: -5px 0 10px 0;
+    }
+
+    .user-actions {
+      background-color: #fff3cd;
+      border: 2px dashed #ff9800;
+      padding: 10px;
+      border-radius: 8px;
+      width: 280px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Home Doctor – Lifecycle Flowchart</h1>
+  <div class="flowchart">
+    <div class="box">1. Page Load</div>
+    <div class="arrow"></div>
+    <div class="box">2. Parse HTML + CSS → render UI</div>
+    <div class="arrow"></div>
+    <div class="box">3. Run Bottom of the Body</div>
+    <div class="arrow"></div>
+    <div class="box">4. Create Precautions</div>
+    <div class="arrow"></div>
+    <div class="box">5. Define Function Check Precaution</div>
+    <div class="arrow"></div>
+    <div class="box">6. Add Event Listener</div>
+    <div class="arrow"></div>
+    <div class="box">7. Ready / WAIT for User Action</div>
+    <div class="arrow"></div>
+    <div class="user-actions">
+      User enters disease name<br>
+      User clicks "Check Precaution" button
+    </div>
+  </div>
+</body>
+</html>
